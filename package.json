@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Cloud Firestore emulator testing, with TypeScript",
+  "scripts": {
+    "test": "jest",
+    "watch": "npm test -- --watch"
+  },
+  "devDependencies": {
+    "@firebase/testing": "0.9.4",
+    "@types/jest": "23.3.9",
+    "jest": "23.6.0",
+    "filesystem": "1.0.1",
+    "source-map-support": "0.5.12",
+    "ts-jest": "22.4.6",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.5"
+  },
+  "jest": {
+    "transform": {
+      "\\.ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "test/.*test.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  }
+}
